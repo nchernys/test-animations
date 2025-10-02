@@ -20,7 +20,7 @@ export default function CelebrationParticles({
 
   return (
     <Particles
-      id="confetti"
+      id="particle"
       init={initParticles}
       loaded={async () => {
         setTimeout(() => setShowCelebrate(false), 7000); // Automatically turn off after 7 seconds

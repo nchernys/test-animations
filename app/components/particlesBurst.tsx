@@ -20,7 +20,7 @@ export default function CelebrationParticlesBurst({
 
   return (
     <Particles
-      id="confetti"
+      id="particle-burst"
       init={initParticles}
       loaded={async () => {
         setTimeout(() => setShowCelebrate(false), 8000); // Automatically turn off after 7 seconds
@@ -47,7 +47,7 @@ export default function CelebrationParticlesBurst({
           move: {
             enable: true,
             direction: "top",
-            speed: { min: 65, max: 100 }, // initial particle acceleration speed
+            speed: { min: 50, max: 100 }, // initial particle acceleration speed
             straight: false,
             decay: 0.05,
             outModes: {

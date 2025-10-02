@@ -13,13 +13,19 @@ export default function Home() {
 
   const handleParticles = () => {
     setShowParticles(true);
+    setShowParticlesBurst(false);
+    setShowConfetti(false);
   };
 
   const handleParticlesBurst = () => {
+    setShowParticles(false);
     setShowParticlesBurst(true);
+    setShowConfetti(false);
   };
 
   const handleConfetti = () => {
+    setShowParticles(false);
+    setShowParticlesBurst(false);
     setShowConfetti(true);
   };
 
