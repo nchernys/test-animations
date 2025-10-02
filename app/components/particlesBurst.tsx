@@ -47,7 +47,7 @@ export default function CelebrationParticlesBurst({
           move: {
             enable: true,
             direction: "top",
-            speed: { min: 50, max: 100 }, // initial particle acceleration speed
+            speed: { min: 45, max: 100 }, // initial particle acceleration speed
             straight: false,
             decay: 0.05,
             outModes: {
