@@ -16,6 +16,8 @@ export default function CelebrationParticles({
     await loadConfettiPreset(engine);
   }, []);
 
+  if (typeof window === "undefined") return null; // block SSR
+
   return (
     <Particles
       id="confetti"

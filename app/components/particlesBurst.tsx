@@ -16,12 +16,14 @@ export default function CelebrationParticlesBurst({
     await loadConfettiPreset(engine);
   }, []);
 
+  if (typeof window === "undefined") return null; // block SSR
+
   return (
     <Particles
       id="confetti"
       init={initParticles}
       loaded={async () => {
-        setTimeout(() => setShowCelebrate(false), 7000); // Automatically turn off after 7 seconds
+        setTimeout(() => setShowCelebrate(false), 8000); // Automatically turn off after 7 seconds
       }}
       options={{
         preset: "confetti",
@@ -45,7 +47,7 @@ export default function CelebrationParticlesBurst({
           move: {
             enable: true,
             direction: "top",
-            speed: { min: 35, max: 70 }, // initial particle acceleration speed
+            speed: { min: 65, max: 100 }, // initial particle acceleration speed
             straight: false,
             decay: 0.05,
             outModes: {

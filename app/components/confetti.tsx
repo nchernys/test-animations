@@ -71,5 +71,7 @@ export default function CelebrateConfetti({
     return () => clearInterval(intervalId);
   }, [setShowCelebrate, maxBursts]);
 
+  if (typeof window === "undefined") return null; // block SSR
+
   return <canvas ref={canvasRef} className={styles.confettiBg} />;
 }
