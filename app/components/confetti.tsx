@@ -49,9 +49,9 @@ export default function CelebrateConfetti({
       const pos = positions[i % positions.length];
       myConfetti({
         particleCount: 100,
-        startVelocity: 22,
+        startVelocity: 35,
         decay: 0.82,
-        ticks: 100,
+        ticks: 200,
         gravity: 1.5,
         spread: 360,
         shapes: ["square", "circle"],
