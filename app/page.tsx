@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="font-sans flex min-h-screen p-8 pb-20 gap-4 sm:p-20">
+      <div className="font-sans flex min-h-screen p-8 pb-20 gap-16 sm:p-20">
         <button onClick={handleParticles}>Click 1</button>
         <button onClick={handleParticlesBurst}>Click 2</button>
         <button onClick={handleConfetti}>Click 3</button>

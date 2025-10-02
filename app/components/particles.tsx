@@ -32,7 +32,7 @@ export default function CelebrationParticles({
 
         emitters: [
           {
-            position: { x: 50, y: 105 }, // from x: center, y: upward
+            position: { x: 50, y: 100 }, // from x: center, y: upward
             size: { width: 100, height: 0 }, // burst origin: entire scren width
             life: { duration: 3, count: 1 }, // one burst, 3s duration
           },
